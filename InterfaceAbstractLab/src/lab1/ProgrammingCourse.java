@@ -8,16 +8,14 @@ package lab1;
 import javax.swing.JOptionPane;
 
 public abstract class ProgrammingCourse {
+
 private String courseName;
 private String courseNumber;
 private String coursePrerequisites;
-private Double courseCredits;
-
-
-
-
-
-
+private Double courseCredits;    
+    
+    
+    
 public void setCourseFields(String courseName, String courseNumber, String coursePrerequisites, Double courseCredits)
 {
 this.setCourseName(courseName);
@@ -99,7 +97,7 @@ private Double getCourseCredits()
 {
     return this.courseCredits;
 
-}
-
-
+}    
+    
+    
 }
