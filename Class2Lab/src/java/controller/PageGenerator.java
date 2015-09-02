@@ -37,7 +37,8 @@ public class PageGenerator extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet PageGenerator</title>");            
+            out.println("<title>Servlet PageGenerator</title>"); 
+            out.println("<link rel=stylesheet type=text/css href=css.css>");
             out.println("</head>");
             out.println("<body>");
             out.println("<table border=1><tr><td>hi</td><td>hi</td><td>hi</td></tr> <tr><td>hi</td><td>hi</td><td>hi</td></tr> <tr><td>hi</td><td>hi</td><td>hi</td></tr> </table>");
