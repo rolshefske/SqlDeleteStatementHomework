@@ -31,7 +31,7 @@ public class WelcomeService {
         }
         else if(currentTimeInHours >=11 && currentTimeInHours <= 16)
         {
-            generalTimefDay = "Evening";
+            generalTimefDay = "Afternoon";
         }
         else if(currentTimeInHours >=0 && currentTimeInHours <= 10)
         {
