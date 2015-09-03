@@ -61,19 +61,7 @@ public class greeter extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 //        processRequest(request, response);
-        String name = request.getParameter("firstname");
-        request.setAttribute("name", name);
-        
-        WelcomeService welcomeService = new WelcomeService();
-        
-        
-        
-        String s = welcomeService.getGeneralTimeOfDay();
-        request.setAttribute("time", s);
-        
-        RequestDispatcher view = 
-                    request.getRequestDispatcher("/welcome2.jsp");
-        view.forward(request,response);
+
     }
 
     /**
@@ -88,6 +76,19 @@ public class greeter extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 //        processRequest(request, response);
+                String name = request.getParameter("firstname");
+        request.setAttribute("name", name);
+        
+        WelcomeService welcomeService = new WelcomeService();
+        
+        
+        
+        String s = welcomeService.getGeneralTimeOfDay();
+        request.setAttribute("time", s);
+        
+        RequestDispatcher view = 
+                    request.getRequestDispatcher("/welcome2.jsp");
+        view.forward(request,response);
     }
 
     /**
